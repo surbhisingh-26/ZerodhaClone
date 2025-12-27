@@ -19,20 +19,19 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
+      <img src="logo.png" style={{width: "50px" }} />
       <div className="menus">
         <ul>
           <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/"
-              onClick={() => handleMenuClick(0)}
-            >
+            <Link style={{ textDecoration: "none" }}to="/"
+              onClick={() => handleMenuClick(0)}>
               <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
                 Dashboard
               </p>
             </Link>
           </li>
+
+
           <li>
             <Link
               style={{ textDecoration: "none" }}
@@ -44,6 +43,8 @@ const Menu = () => {
               </p>
             </Link>
           </li>
+
+
           <li>
             <Link
               style={{ textDecoration: "none" }}
@@ -55,6 +56,8 @@ const Menu = () => {
               </p>
             </Link>
           </li>
+
+
           <li>
             <Link
               style={{ textDecoration: "none" }}
@@ -66,6 +69,8 @@ const Menu = () => {
               </p>
             </Link>
           </li>
+
+
           <li>
             <Link
               style={{ textDecoration: "none" }}
@@ -77,13 +82,15 @@ const Menu = () => {
               </p>
             </Link>
           </li>
+
+
           <li>
             <Link
               style={{ textDecoration: "none" }}
               to="/apps"
-              onClick={() => handleMenuClick(6)}
+              onClick={() => handleMenuClick(5)}
             >
-              <p className={selectedMenu === 6 ? activeMenuClass : menuClass}>
+              <p className={selectedMenu === 5 ? activeMenuClass : menuClass}>
                 Apps
               </p>
             </Link>
@@ -94,6 +101,7 @@ const Menu = () => {
           <div className="avatar">ZU</div>
           <p className="username">USERID</p>
         </div>
+        {isProfileDropdownOpen}
       </div>
     </div>
   );

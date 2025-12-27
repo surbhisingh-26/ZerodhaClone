@@ -12,14 +12,14 @@ function Hero() {
             <h1 className='fs-3'>Search for an answer or browser help topics to create a ticket</h1>
               <input placeholder='Eg:how do i activate F&O,why is my order getting rejected..'
               style={{}}/><br/>
-               <a href=''>Track account opening</a><br/>
-               <a href=''>Track segment activation</a><br/>
-               <a href=''>Intraday margins</a><br/>
-               <a href=''>Kite user mannual</a><br/>
+               <a href=''>Track account opening</a>
+               <a href=''>Track segment activation</a>
+               <a href=''>Intraday margins</a>
+               <a href=''>Kite user mannual</a>
            </div>
            <div className='col-6 p-3'>
             <h1 className='fs-3'>Featured</h1>
-            <o>
+            <o className={{lineheight:"3"}}>
                 <li><a href=''>Track account opening</a><br/></li>
                 <li><a href=''>Track segment activation</a></li>
             </o>
